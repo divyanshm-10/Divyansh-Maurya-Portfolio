@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Maurya | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 70px;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f1e;
+    color: #e0e0e0;
+        }
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6C63FF;
+            white-space: nowrap;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00C9A7;
+        }
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1600&q=80") no-repeat center center/cover;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        /* Sections */
+        section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #6C63FF;
+        }
+        section p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+            color: #ccc;
+        }
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: #2a2a40;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill:hover {
+            transform: scale(1.1);
+        }
+        /* Card Sections for Achievements, Certifications, Leadership */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .card {
+            background: #2a2a40;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .card h3 {
+            color: #6C63FF;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .card p {
+            color: #ccc;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .project-card {
+            background: #2a2a40;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        .project-card h3 {
+            color: #6C63FF;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .project-card p {
+            color: #ccc;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .project-card a {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #00C9A7;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .project-card a:hover {
+            background: #6C63FF;
+        }
+        /* Resume Section */
+        .resume a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #1abc9c;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .resume a:hover {
+            background: #3498db;
+        }
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0d1117, #1e1e2e, #2a2a40);
+            padding: 50px 20px 20px;
+            color: #ccc;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-section {
+            max-width: 250px;
+        }
+        .footer-section h3 {
+            color: #6C63FF;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        .footer-section ul li a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-section ul li a:hover {
+            color: #00C9A7;
+        }
+        .footer-section p a {
+            color: #00C9A7;
+            text-decoration: none;
+        }
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            perspective: 1000px;
+        }
+        .social-icons a {
+            font-size: 28px;
+            color: #888;
+            transition: transform 0.6s ease, color 0.6s ease;
+            display: inline-block;
+        }
+        .social-icons a:hover {
+            transform: translateY(-12px) rotateY(360deg);
+        }
+        .social-icons a:hover .fa-facebook { color: #1877F2; }
+        .social-icons a:hover .fa-twitter { color: #1DA1F2; }
+        .social-icons a:hover .fa-linkedin { color: #0077B5; }
+        .social-icons a:hover .fa-github { color: #f5f5f5; }
+        /* Bottom Footer */
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+        #about {
+    background: #2a2a40;          /* Dark card background */
+    padding: 80px 50px;           /* Spacing inside section */
+    border-radius: 15px;          /* Rounded corners */
+    margin: 40px auto;            /* Center the card */
+    max-width: 1000px;            /* Limit width */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-photo img {
+    width: 270px;
+    height: 280px;
+    border-radius: 50%;           /* Circular image */
+    object-fit: cover;
+    border: 6px solid #5854ac;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.about-photo img:hover {
+    transform: scale(1.08);
+}
+
+.about-text {
+    max-width: 600px;
+    font-size: 18px;
+    color: #ccc;
+    text-align: left;
+}
+/* General fade-in for scroll */
+.fade-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hero Section Animations */
+.hero h1 {
+    opacity: 0;
+    animation: fadeInUp 1s 0.3s forwards;
+}
+.hero p {
+    opacity: 0;
+    animation: fadeInUp 1s 0.6s forwards;
+}
+
+/* About Section Floating Photo */
+.about-photo img {
+    animation: float 3s ease-in-out infinite alternate;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/* Cards, Projects, Skills Hover & Scroll */
+.card, .project-card, .skill {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.card:hover, .project-card:hover, .skill:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* Social Icons 3D Hover */
+.social-icons a:hover {
+    transform: translateY(-12px) rotateY(360deg) scale(1.2);
+    color: #6C63FF;
+}
+
+/* Keyframe for fadeInUp */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Divyansh<span> Maurya</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Divyansh Maurya</h1>
+        <p>B.Tech CSE Student | Java, Python, PHP Developer</p>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="fade-on-scroll">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <!-- Profile Photo -->
+        <div class="about-photo">
+            <img src="images/divyansh.jpg" alt="Divyansh Maurya">
+        </div>
+        <!-- About Text -->
+        <div class="about-text">
+            <p>I am a B.Tech Computer Science and Engineering student at
+                <b>I.T.S Engineering College, Greater Noida</b>. Passionate about software development,
+                data science, and creating modern web applications.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="fade-on-scroll">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="skill fade-on-scroll">Java</div>
+        <div class="skill fade-on-scroll">Python</div>
+        <div class="skill fade-on-scroll">PHP</div>
+        <div class="skill fade-on-scroll">HTML & CSS</div>
+        <div class="skill fade-on-scroll">SQL</div>
+        <div class="skill fade-on-scroll">NumPy</div>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="fade-on-scroll">
+    <h2>Achievements</h2>
+    <div class="card-grid">
+        <div class="card fade-on-scroll">
+            <h3>Ideathon</h3>
+            <p>7th Rank out of 180 Teams</p>
+        </div>
+        <div class="card fade-on-scroll">
+            <h3>Innocodeathon</h3>
+            <p>10th Rank out of 376 Teams</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="fade-on-scroll">
+    <h2>Certifications</h2>
+    <div class="card-grid">
+        <div class="card fade-on-scroll">
+            <h3>Smart India Hackathon (SIH)</h3>
+        </div>
+        <div class="card fade-on-scroll">
+            <h3>Python Basics (Whitehat Jr)</h3>
+        </div>
+        <div class="card fade-on-scroll">
+            <h3>Data Structures & Algorithm in Java (Infosys)</h3>
+        </div>
+        <div class="card fade-on-scroll">
+            <h3>Full Stack Web Dev (Softpro)</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership & Activities Section -->
+<section id="leadership" class="fade-on-scroll">
+    <h2>Leadership & Activities</h2>
+    <div class="card-grid">
+        <div class="card fade-on-scroll">
+            <h3>Coordinator – Cultural Fest</h3>
+        </div>
+        <div class="card fade-on-scroll">
+            <h3>Student Coordinator – ICAC2N-24 (International Conference)</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="fade-on-scroll">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card fade-on-scroll">
+            <h3>EDA Titanic Dataset</h3>
+            <p>Performed Exploratory Data Analysis and visualization for Titanic dataset using Python and Pandas.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>NBA Dataset Analysis</h3>
+            <p>Data analysis and visualization of NBA statistics using Python and matplotlib/seaborn.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Diabetes Dataset Dashboard</h3>
+            <p>Created interactive dashboards in Python and Tableau to analyze diabetes patient data.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Iris Dataset Analysis</h3>
+            <p>Implemented classification and EDA on Iris dataset using Python and scikit-learn.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Electric Vehicle Dashboard</h3>
+            <p>Designed an interactive dashboard to visualize Electric Vehicle datasets and trends.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>ATM Banking System (Java)</h3>
+            <p>Console-based Java application simulating ATM transactions (deposit, withdraw, balance check).</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Perfume Shop – Full-Stack Web App</h3>
+            <p>Developed an e-commerce platform with product catalog, cart, and secure checkout using PHP, SQL, HTML & CSS.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Automatic Railway Barricade System</h3>
+            <p>Hardware + software system for activating warning signals and barriers automatically at railway crossings.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>College Website – Management System</h3>
+            <p>Designed a responsive website for college management with student/admin modules.</p>
+        </div>
+        <div class="project-card fade-on-scroll">
+            <h3>Learning Website</h3>
+            <p>Interactive learning portal with student dashboard, personalized recommendations, and progress tracking.</p>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:divyanshmaurya@example.com" style="color:#00C9A7;">divyanshm989@gmail.com</a></p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>My Resume</h2>
+        <p>Click below to download my resume:</p>
+        <a href="https://drive.google.com/file/d/1QfXGzTexCL2KCr-Gr_1ufeR2ESByp8oY/view?usp=sharing" download>Download Resume</a>
+    </section>
+
+    <script>
+        // Scroll-based reveal
+        const faders = document.querySelectorAll('.fade-on-scroll');
+
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#leadership">Leadership</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:divyanshm989@gmail.com">divyanshm989@gmail.com</a></p>
+                <p>Greater Noida, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/divyansh--maurya/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/DivyanshAadi"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Divyansh Maurya. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

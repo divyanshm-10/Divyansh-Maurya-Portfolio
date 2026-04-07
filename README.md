@@ -15,7 +15,7 @@ This portfolio showcases my projects, skills, and achievements in **Web Developm
 ---
 
 ## 🌐 Live Demo
-🔗 [View Portfolio](https://your-portfolio-link.com)
+🔗 [View Portfolio](file:///C:/Users/Harsh/OneDrive/Desktop/every/webto/Harshit.html)
 
 ---
 
@@ -67,8 +67,8 @@ This portfolio showcases my projects, skills, and achievements in **Web Developm
 ---
 
 ## 📬 Contact Me
-- 📧 Email: your-email@gmail.com  
-- 💼 LinkedIn: https://linkedin.com/in/your-profile  
+- 📧 Email: divyanshm989@gmail.com  
+- 💼 LinkedIn: https://linkedin.com/in/divyansh--maurya  
 - 🐙 GitHub: https://github.com/divyanshm-10  
 
 ---

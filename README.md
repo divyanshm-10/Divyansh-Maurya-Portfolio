@@ -4,26 +4,31 @@
 ![GitHub stars](https://img.shields.io/github/stars/divyanshm-10/divyansh-maurya-portfolio?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/divyanshm-10/divyansh-maurya-portfolio?style=social)
 ![GitHub last commit](https://img.shields.io/github/last-commit/divyanshm-10/divyansh-maurya-portfolio)
-![GitHub license](https://img.shields.io/github/license/divyanshm-10/divyansh-maurya-portfolio)
 ![Profile views](https://komarev.com/ghpvc/?username=divyanshm-10&color=blue)
 
 ---
 
-Welcome to my personal portfolio repository! 🚀  
-This portfolio showcases my projects, skills, and achievements in **Web Development** and **AI/ML**.
+## 🌐 Live Portfolio
+
+🚀 Click below to view my portfolio website:
+
+👉 https://divyanshm-10.github.io/divyansh-maurya-portfolio/
 
 ---
 
-## 🌐 Live Demo
-🔗 [View Portfolio](file:///C:/Users/Harsh/OneDrive/Desktop/every/webto/Harshit.html)
+## 💻 Source Code
+
+📂 Portfolio HTML File:  
+👉 [index.html](./index.html)
 
 ---
 
 ## 📌 About Me
-- 🎓 B.Tech in Computer Science & Engineering  
-- 💻 Passionate about Web Development & Machine Learning  
-- 🚀 Skilled in building modern and responsive applications  
-- 📍 India  
+
+- 🎓 B.Tech Computer Science & Engineering  
+- 🏫 I.T.S Engineering College, Greater Noida  
+- 💻 Web Developer & AI/ML Enthusiast  
+- 🚀 Skilled in Java, Python, PHP, SQL  
 
 ---
 
@@ -41,32 +46,56 @@ This portfolio showcases my projects, skills, and achievements in **Web Developm
 
 ## 📂 Projects
 
-### 🔹 Student Performance Analysis
-- Analyzed student data using Python  
-- Found patterns based on study hours, parental education, etc.  
-- Helped improve learning outcomes  
-
-### 🔹 Electric Vehicle Data Analysis
-- Analyzed EV trends and adoption  
-- Used data visualization techniques  
-- Built insights for future predictions  
+### 🔹 College Website – Management System
+- Developed a responsive college management website  
+- Includes student/admin modules  
+📸 Screenshot:  
+![College](images/college.png)
 
 ---
 
-## 📸 Screenshots
-(Add your project screenshots here)
+### 🔹 Electric Vehicle Dashboard
+- Data analysis and visualization of EV trends  
+- Built interactive dashboard  
+📸 Screenshot:  
+![EV](images/ev.png)
+
+---
+
+### 🔹 Titanic Survival Dashboard
+- Performed EDA on Titanic dataset  
+- Created visual insights  
+📸 Screenshot:  
+![Titanic](images/titanic.png)
+
+---
+
+### 🔹 Diabetes Patients Dashboard
+- Built dashboard for patient data analysis  
+- Used visualization for insights  
+📸 Screenshot:  
+![Diabetes](images/diabetes.png)
+
+---
+
+## 📸 Portfolio Preview
+
+![Portfolio](images/portfolio.png)
 
 ---
 
 ## 🚀 Features
+
 - Responsive Design 📱  
-- Clean UI/UX 🎨  
+- Modern UI/UX 🎨  
+- Smooth Animations ✨  
 - Project Showcase 📂  
-- Easy Navigation 🔍  
+- Resume Download Option 📄  
 
 ---
 
 ## 📬 Contact Me
+
 - 📧 Email: divyanshm989@gmail.com  
 - 💼 LinkedIn: https://linkedin.com/in/divyansh--maurya  
 - 🐙 GitHub: https://github.com/divyanshm-10  
@@ -74,4 +103,5 @@ This portfolio showcases my projects, skills, and achievements in **Web Developm
 ---
 
 ## ⭐ Support
+
 If you like this project, give it a ⭐ on GitHub!

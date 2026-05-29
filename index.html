@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Divyansh Maurya — Computer Science Engineering student, Web Developer & Data Enthusiast. Building clean web apps, data projects, and useful digital experiences.">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Divyansh Maurya | Portfolio">
+  <meta property="og:description"
+    content="CSE student building scalable web apps, data projects & polished interfaces. Open to internships & collaborations.">
+  <meta property="og:image" content="profile.png">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Divyansh Maurya | Portfolio">
+  <meta name="twitter:description" content="CSE student building scalable web apps and data projects.">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%2338bdf8'/><text x='50' y='68' font-family='sans-serif' font-weight='900' font-size='52' text-anchor='middle' fill='white'>D</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Clash+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <title>Divyansh Maurya | Portfolio</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    try {
+      if (localStorage.getItem("portfolioTheme") === "light") document.documentElement.classList.add("light-theme");
+    } catch(e) {}
+  </script>
+</head>
+
+<body class="loading">
+  <!-- LOADER -->
+  <div class="loader-screen" id="loader">
+    <div class="loader-content">
+      <div class="loader-name">Divyansh Maurya</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-sub">Loading portfolio…</div>
+    </div>
+  </div>
+  
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav aria-label="Primary navigation">
+      <a href="#home" class="logo">DM.</a>
+
+      <ul id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#achievements">Wins</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+          <i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
+        <button class="nav-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home" style="padding-top:130px">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="avail-badge"><span class="dot"></span>Open to internships &amp; opportunities</div>
+
+        <h1>
+          <span class="line1">Hi, I'm Divyansh.</span>
+          <span class="line2">I build web applications & work on data analytics & data science solutions.</span>
+        </h1>
+
+        <p class="hero-sub"><span id="typing"></span><span class="typing-caret" aria-hidden="true"></span></p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i>View Projects</a>
+          <a href="divyansh_12.pdf" class="btn btn-outline" target="_blank" rel="noreferrer"><i
+              class="fas fa-file-lines"></i>View Resume</a>
+          <a href="+917992159410" class="btn btn-outline"><i class="fas fa-paper-plane"></i>Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <div class="section-tag"><i class="fas fa-user" aria-hidden="true"></i>Introduction</div>
+      <h2>About Me</h2>
+      <div class="divider"></div>
+
+      <div class="about-grid">
+        <div class="photo-wrap">
+          <div class="photo-glow" aria-hidden="true"></div>
+          <div class="photo-frame">
+            <!--
+              IMPORTANT: Replace "profile.png" with your actual photo file.
+              Place the image in the same folder as this HTML file.
+              Recommended size: 400×500px or similar portrait ratio.
+            -->
+            <img src="div.png" alt="Divyansh Maurya — CSE student and web developer">
+          </div>
+          <div class="photo-badge">
+            <div class="badge-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+            <div class="badge-text">
+              <strong>CSE Student</strong>
+              <span>B.Tech — 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="about-text">
+            <p>
+              I'm Divyansh Maurya, a Computer Science Engineering student passionate about building scalable web
+              applications, solving real-world problems through code, and creating polished digital experiences that
+              people actually enjoy using.
+            </p>
+            <p>
+              I work with Java, Python, PHP, SQL, React, and modern frontend technologies. I enjoy turning ideas into
+              working products — from data-driven projects and library systems to interactive dashboards and responsive
+              UIs.
+            </p>
+            <p>
+              Right now I'm focused on sharpening my full-stack skills, participating in hackathons, getting internship
+              experience, and building a portfolio of projects that go beyond the classroom.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <strong>7+</strong>
+              <span>Technologies</span>
+            </div>
+            <div class="stat-card">
+              <strong>3+</strong>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <strong>7</strong>
+              <span>Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="reveal">
+      <div class="section-tag"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Education</div>
+      <h2>Academic Background</h2>
+      <p class="section-intro">My learning path combines computer science fundamentals with practical, project-based
+        development across web, data, and software engineering.</p>
+
+      <div class="edu-grid">
+        <article class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
+          <h3>B.Tech — Computer Science Engineering</h3>
+          <p>Covering core programming, databases, web development, data structures, algorithms, software engineering,
+            and machine learning fundamentals through academic coursework and self-driven projects.</p>
+          <div class="edu-tags">
+            <span class="edu-tag">B.Tech / CSE</span>
+            <span class="edu-tag">Currently Pursuing</span>
+            <span class="edu-tag">2022 – 2026</span>
+          </div>
+        </article>
+
+        <article class="edu-card">
+          <div class="edu-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+          <h3>Project-Based & Self Learning</h3>
+          <p>Strengthening technical depth by building real projects, completing industry certifications, practising
+            algorithms in Java, and exploring data tools like Tableau, Power BI, and Python analytics libraries.</p>
+          <div class="edu-tags">
+            <span class="edu-tag">Java</span>
+            <span class="edu-tag">Python</span>
+            <span class="edu-tag">React</span>
+            <span class="edu-tag">SQL</span>
+            <span class="edu-tag">Tableau</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <div class="section-tag"><i class="fas fa-bolt" aria-hidden="true"></i>Expertise</div>
+      <h2>Skills I Use to Build</h2>
+      <p class="section-intro">A focused mix of programming, frontend, databases, analytics, and product thinking — with
+        honest proficiency levels.</p>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fab fa-java" aria-hidden="true"></i></div>
+          <div>
+            <h3>Java</h3>
+            <p>OOP, logic building, DSA, problem solving</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:78%"></div>
+            </div>
+            <span class="level-label">Intermediate</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+          <div>
+            <h3>Python</h3>
+            <p>Data analysis, automation, ML basics</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:72%"></div>
+            </div>
+            <span class="level-label">Intermediate</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fab fa-react" aria-hidden="true"></i></div>
+          <div>
+            <h3>React</h3>
+            <p>Components, hooks, interactive UI</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:60%"></div>
+            </div>
+            <span class="level-label">Learning</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fab fa-php" aria-hidden="true"></i></div>
+          <div>
+            <h3>PHP</h3>
+            <p>Server-side logic, web applications</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:65%"></div>
+            </div>
+            <span class="level-label">Intermediate</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+          <div>
+            <h3>SQL / MySQL</h3>
+            <p>Queries, schema design, relational DBs</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:75%"></div>
+            </div>
+            <span class="level-label">Intermediate</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
+          <div>
+            <h3>Tableau / Power BI</h3>
+            <p>Dashboards, visual analytics, reports</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:68%"></div>
+            </div>
+            <span class="level-label">Intermediate</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+          <div>
+            <h3>HTML / CSS / JS</h3>
+            <p>Responsive layouts, animations, UI</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:85%"></div>
+            </div>
+            <span class="level-label">Advanced</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></div>
+          <div>
+            <h3>UI/UX Design</h3>
+            <p>Clean layouts, usability, Figma basics</p>
+          </div>
+          <div class="skill-level">
+            <div class="level-bar">
+              <div class="level-fill" style="--fill:58%"></div>
+            </div>
+            <span class="level-label">Learning</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="reveal">
+      <div class="section-tag"><i class="fas fa-certificate" aria-hidden="true"></i>Achievements</div>
+      <h2>My Certificates</h2>
+      <p class="section-intro">Certifications and course completions in programming, cloud computing, analytics, AI, and
+        data tools.</p>
+
+      <div class="certs-grid">
+
+        <article class="cert-card">
+          <!--
+            Replace "cert1.png" with your actual certificate image.
+            All certificate images must be in the same folder as index.html.
+          -->
+          <div class="cert-img-wrap">
+            <img src="cert1.png" alt="InnoCodeathon 2024 participation certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>InnoCodeathon 2024</h3>
+            <p>Participated in InnoCodeathon 2024 organised by the Department of Computer Science &amp; Engineering at
+              ITS Engineering College, Greater Noida.</p>
+            <div class="cert-tags"><span class="cert-tag">Hackathon</span><span class="cert-tag">Innovation</span><span
+                class="cert-tag">Teamwork</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>May 2024</span>
+              <a href="cert1.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Power bi.png" alt="Power BI for Beginners certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Power BI for Beginners</h3>
+            <p>Microsoft &amp; Simplilearn SkillUp certification focused on Power BI dashboards, analytics, and
+              reporting.</p>
+            <div class="cert-tags"><span class="cert-tag">Power BI</span><span class="cert-tag">Analytics</span><span
+                class="cert-tag">Microsoft</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>October 2025</span>
+              <a href="Power bi.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Python for beginner.png" alt="Python for Beginners certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Python for Beginners</h3>
+            <p>Beginner-friendly Python programming certification covering logic building, syntax, and problem solving
+              fundamentals.</p>
+            <div class="cert-tags"><span class="cert-tag">Python</span><span class="cert-tag">Programming</span><span
+                class="cert-tag">Development</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>December 2025</span>
+              <a href="Python for beginner.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="cloud computing.png" alt="Introduction to Cloud Computing certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Introduction to Cloud Computing</h3>
+            <p>Certification covering cloud concepts, virtualisation, deployment models, and cloud service
+              architectures.</p>
+            <div class="cert-tags"><span class="cert-tag">Cloud</span><span class="cert-tag">Infrastructure</span><span
+                class="cert-tag">Tech</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>October 2025</span>
+              <a href="cloud computing.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Data anlystic.png" alt="Introduction to Data Analytics certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Introduction to Data Analytics</h3>
+            <p>Learned data analytics fundamentals, insights generation, dashboards, and data-driven decision making.
+            </p>
+            <div class="cert-tags"><span class="cert-tag">Data</span><span class="cert-tag">Analytics</span><span
+                class="cert-tag">Visualization</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>December 2025</span>
+              <a href="Data anlystic.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="Genrative ai.png" alt="Introduction to Generative AI certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Introduction to Generative AI</h3>
+            <p>Google Cloud &amp; Simplilearn certification introducing Generative AI concepts, LLMs, and AI-powered
+              tools.</p>
+            <div class="cert-tags"><span class="cert-tag">AI</span><span class="cert-tag">LLM</span><span
+                class="cert-tag">Google Cloud</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>December 2025</span>
+              <a href="Genrative ai.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-img-wrap">
+            <img src="dsa with java.png" alt="Data Structures and Algorithms using Java certificate">
+            <div class="cert-overlay" aria-hidden="true"></div>
+          </div>
+          <div class="cert-body">
+            <h3>Data Structures &amp; Algorithms — Java</h3>
+            <p>Infosys Springboard certification covering Java-based problem solving, DSA concepts, and algorithmic
+              thinking.</p>
+            <div class="cert-tags"><span class="cert-tag">Java</span><span class="cert-tag">DSA</span><span
+                class="cert-tag">Infosys</span></div>
+            <div class="cert-footer">
+              <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>December 2024</span>
+              <a href="dsa with java.png" target="_blank" rel="noreferrer" class="btn btn-primary"
+                style="min-height:40px;padding:0 16px;font-size:13px"><i class="fas fa-eye"
+                  aria-hidden="true"></i>View</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <div class="section-tag"><i class="fas fa-layer-group" aria-hidden="true"></i>My Work</div>
+      <h2>Featured Projects</h2>
+      <p class="section-intro">Projects built to solve real problems, practice real skills, and ship real output.</p>
+
+      <div class="projects-grid">
+
+        <article class="proj-card">
+          <!--
+            Add a screenshot of your project here.
+            Name it career-screenshot.png and place in same folder as index.html.
+            If no screenshot yet, the placeholder below shows automatically.
+          -->
+          <div class="proj-screenshot-placeholder">
+            <i class="fas fa-route" aria-hidden="true"></i>
+            <span>Career Path Prediction</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-icon"><i class="fas fa-route" aria-hidden="true"></i></div>
+            <h3>Career Path Prediction</h3>
+            <p>Machine learning project that analyses academic performance, skills, and interests to suggest suitable
+              career paths for students. Built with Python and trained on structured academic data.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Machine Learning</span>
+              <span class="proj-tag">Pandas</span>
+              <span class="proj-tag">Scikit-learn</span>
+            </div>
+            <div class="proj-actions">
+              <button class="btn btn-outline proj-detail-btn" type="button" data-project="career" style="flex:1"><i
+                  class="fas fa-circle-info"></i>Details</button>
+              <a href="https://github.com/divyanshm-10" class="btn btn-primary" target="_blank" rel="noreferrer"
+                style="flex:1"><i class="fab fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-screenshot-placeholder">
+            <i class="fas fa-book-open-reader" aria-hidden="true"></i>
+            <span>Digital Library System</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-icon"><i class="fas fa-book-open-reader" aria-hidden="true"></i></div>
+            <h3>Digital Library System</h3>
+            <p>Full web-based library management system with book cataloguing, user management, issue and return
+              tracking, and admin dashboard — built on PHP and MySQL.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">HTML/CSS</span>
+              <span class="proj-tag">Web App</span>
+            </div>
+            <div class="proj-actions">
+              <button class="btn btn-outline proj-detail-btn" type="button" data-project="library" style="flex:1"><i
+                  class="fas fa-circle-info"></i>Details</button>
+              <a href="https://github.com/divyanshm-10" class="btn btn-primary" target="_blank" rel="noreferrer"
+                style="flex:1"><i class="fab fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-screenshot-placeholder">
+            <i class="fas fa-chart-line" aria-hidden="true"></i>
+            <span>EDA — Titanic Dataset</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <h3>EDA — Titanic Dataset</h3>
+            <p>Exploratory data analysis project using the Titanic dataset to uncover survival trends, handle missing
+              values, and visualise feature relationships using Python analytics libraries.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Pandas</span>
+              <span class="proj-tag">Matplotlib</span>
+              <span class="proj-tag">EDA</span>
+            </div>
+            <div class="proj-actions">
+              <button class="btn btn-outline proj-detail-btn" type="button" data-project="titanic" style="flex:1"><i
+                  class="fas fa-circle-info"></i>Details</button>
+              <a href="https://github.com/divyanshm-10" class="btn btn-primary" target="_blank" rel="noreferrer"
+                style="flex:1"><i class="fab fa-github"></i>GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="reveal">
+      <div class="section-tag"><i class="fas fa-road" aria-hidden="true"></i>Progress</div>
+      <h2>My Journey</h2>
+      <div class="divider"></div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+          <article class="tl-content">
+            <div class="tl-date">2022 — Started B.Tech CSE</div>
+            <h3>Beginning of the Journey</h3>
+            <p>Enrolled in Computer Science Engineering. Started learning programming fundamentals — Java, C, and
+              discrete mathematics. Built my first HTML page and fell in love with the web.</p>
+          </article>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-code" aria-hidden="true"></i></div>
+          <article class="tl-content">
+            <div class="tl-date">2023 — First Real Projects</div>
+            <h3>Turning Theory Into Practice</h3>
+            <p>Built the Digital Library System in PHP &amp; MySQL — my first complete web application. Started
+              practicing data structures in Java and exploring Python for data work.</p>
+          </article>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <article class="tl-content">
+            <div class="tl-date">May 2024 — InnoCodeathon</div>
+            <h3>First Hackathon Experience</h3>
+            <p>Participated in InnoCodeathon 2024 at ITS Engineering College, Greater Noida. Collaborated with a team to
+              build under time pressure — a huge leap in practical development and teamwork.</p>
+          </article>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <article class="tl-content">
+            <div class="tl-date">Dec 2024 – Dec 2025 — Certifications</div>
+            <h3>Expanding Technical Breadth</h3>
+            <p>Earned 6+ certifications across DSA with Java (Infosys), Generative AI (Google Cloud), Cloud Computing,
+              Data Analytics, Power BI, and Python — building verified skills across multiple domains.</p>
+          </article>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+          <article class="tl-content">
+            <div class="tl-date">2026 — Next Focus</div>
+            <h3>What I'm Working Toward</h3>
+            <p>Deploying live demos for all projects, building more React-based applications, improving documentation
+              quality, and securing my first internship in web development or data engineering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="reveal">
+      <div class="section-tag"><i class="fas fa-star" aria-hidden="true"></i>Wins</div>
+      <h2>Achievements &amp; Highlights</h2>
+      <p class="section-intro">Key milestones, recognitions, and moments that shaped my technical growth.</p>
+
+      <div class="achieve-grid">
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+          <div>
+            <h3>InnoCodeathon 2024 Participant</h3>
+            <p>Selected to participate in the college-level hackathon at ITS Engineering College. Collaborated under a
+              tight deadline to design and build a working prototype with a team.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+          <div>
+            <h3>7 Industry Certifications</h3>
+            <p>Completed certifications from Google Cloud, Infosys Springboard, Microsoft, and Simplilearn across AI,
+              Cloud, DSA, Analytics, and Power BI.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+          <div>
+            <h3>Full-Stack Web Application</h3>
+            <p>Independently built a complete Digital Library System with user authentication, database operations, and
+              admin dashboard — entirely self-directed.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+          <div>
+            <h3>Data-Driven ML Project</h3>
+            <p>Designed and trained a Career Path Prediction model using real-world features — including data cleaning,
+              feature engineering, model evaluation, and result interpretation.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+          <div>
+            <h3>Portfolio From Scratch</h3>
+            <p>Built this entire portfolio from scratch using vanilla HTML, CSS, and JavaScript — no templates, no
+              frameworks — with dark/light theme, animations, and responsive design.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card">
+          <div class="achieve-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+          <div>
+            <h3>Active GitHub Profile</h3>
+            <p>Consistently contributing to projects on GitHub. All major projects are version-controlled with clear
+              commits and documentation available publicly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="reveal">
+      <div class="section-tag"><i class="fas fa-file-lines" aria-hidden="true"></i>Resume</div>
+      <h2>My Resume</h2>
+      <p class="section-intro">A concise overview of my education, skills, projects, and contact details — ready for
+        internship screening.</p>
+
+      <div class="resume-block">
+        <div class="resume-top">
+          <div>
+            <h3>Divyansh Maurya</h3>
+            <p>Use this resume for internship opportunities, project collaborations, and technical role screening.
+              Updated May 2026.</p>
+            <div class="resume-chips">
+              <span class="resume-chip"><i class="fas fa-graduation-cap"></i>Computer Science</span>
+              <span class="resume-chip"><i class="fas fa-code"></i>Web Development</span>
+              <span class="resume-chip"><i class="fas fa-chart-line"></i>Data Projects</span>
+              <span class="resume-chip"><i class="fas fa-briefcase"></i>Internship Ready</span>
+            </div>
+          </div>
+          <div class="resume-actions">
+            <!--
+              IMPORTANT: Replace "resume.pdf" with your actual resume filename.
+              Place the PDF in the same folder as this HTML file.
+            -->
+            <a href="divyansh_12.pdf" class="btn btn-primary" target="_blank" rel="noreferrer"><i
+                class="fas fa-eye"></i>View PDF</a>
+            <a href="divyansh_12.pdf" class="btn btn-outline" download="Divyansh_Maurya_Resume.pdf"><i
+                class="fas fa-download"></i>Download</a>
+          </div>
+        </div>
+
+        <div class="resume-preview">
+          <!--
+            The iframe below will show your resume PDF inline.
+            It uses "resume.pdf" — make sure that file is in the same folder.
+            If it doesn't load (some browsers block local PDFs),
+            visitors can still use the View PDF / Download buttons above.
+          -->
+          <iframe src="divyansh_12.pdf" title="Divyansh Maurya Resume PDF" aria-label="Resume PDF preview">
+            <div class="resume-fallback">
+              <i class="fas fa-file-pdf" aria-hidden="true"></i>
+              <p>Your browser could not display the PDF preview. Use the buttons above to view or download the resume.
+              </p>
+              <a href="divyansh_12.pdf" class="btn btn-primary" target="_blank" rel="noreferrer"><i
+                  class="fas fa-eye"></i>Open Resume</a>
+            </div>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <div class="section-tag"><i class="fas fa-envelope" aria-hidden="true"></i>Get In Touch</div>
+      <h2>Let's Build Something Useful</h2>
+      <div class="divider"></div>
+
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p>Have an opportunity, collaboration, or project idea? I'm available for internships, freelance web
+            development, and learning-focused technical projects. I reply within 24 hours.</p>
+          <div class="contact-btns">
+            <a href="mailto:divyanshm989@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i>Email Me</a>
+            <a href="divyansh_12.pdf" class="btn btn-outline" download="divyansh_12 (5).pdf"><i
+                class="fas fa-file-arrow-down"></i>Resume</a>
+            <a href="tel:+917992159410" class="btn btn-outline"><i class="fas fa-phone"></i>Call Me</a>
+            <a href="https://github.com/divyanshm-10" class="icon-link" aria-label="GitHub profile" target="_blank"
+              rel="noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/divyansh--maurya/" class="icon-link" aria-label="LinkedIn profile"
+              target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!--
+          CONTACT FORM — using Formspree for real form submission.
+          Steps to activate:
+          1. Go to https://formspree.io and create a free account
+          2. Create a new form — you'll get an endpoint like https://formspree.io/f/xxxxxyyy
+          3. Replace "https://formspree.io/f/YOUR_FORM_ID" below with your actual endpoint
+          That's it! Formspree sends submissions straight to divyanshm989@gmail.com.
+        -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="name" type="text" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="contactEmail">Email</label>
+              <input id="contactEmail" name="email" type="email" placeholder="you@example.com" required
+                autocomplete="email">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="contactSubject">Subject</label>
+            <input id="contactSubject" name="subject" type="text" placeholder="Internship, project, or collaboration"
+              required>
+          </div>
+          <div class="form-field">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" placeholder="Tell me about your opportunity or idea…"
+              required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" id="formSubmitBtn"><i class="fas fa-paper-plane"></i>Send
+            Message</button>
+          <div class="form-status" id="formStatus" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="reveal">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">Divyansh Maurya</div>
+          <p class="footer-desc">Computer Science Engineering student building clean web apps, data projects, and useful
+            digital experiences with a practical, learner-first mindset.</p>
+          <div class="footer-pills">
+            <span class="footer-pill"><i class="fas fa-code" aria-hidden="true"></i>Web Development</span>
+            <span class="footer-pill"><i class="fas fa-chart-pie" aria-hidden="true"></i>Data Analytics</span>
+            <span class="footer-pill"><i class="fas fa-briefcase" aria-hidden="true"></i>Open to Internships</span>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
+            <a href="#achievements">Wins</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="footer-social">
+            <a href="mailto:divyanshm989@gmail.com" class="icon-link" aria-label="Email Divyansh"><i
+                class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://github.com/divyanshm-10" class="icon-link" aria-label="GitHub" target="_blank"
+              rel="noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/divyansh--maurya/" class="icon-link" aria-label="LinkedIn"
+              target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          </div>
+
+          <a href="mailto:divyanshm989@gmail.com" class="footer-cta"><i class="fas fa-paper-plane"
+              aria-hidden="true"></i>Start a Conversation</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+          <span>&copy; 2026 Divyansh Maurya. All rights reserved.</span>
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i> India</span>
+        </div>
+        <a href="#home">↑ Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true"
+    aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalClose" type="button" aria-label="Close project details">
+        <i class="fas fa-xmark" aria-hidden="true"></i>
+      </button>
+      <div class="modal-header-icon" id="modalIcon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+      <h3 id="modalTitle">Project Details</h3>
+      <p id="modalDesc"></p>
+      <ul class="modal-list" id="modalList"></ul>
+      <div class="proj-tags" id="modalTags" style="margin-bottom:0"></div>
+      <div class="modal-actions">
+        <a href="https://github.com/divyanshm-10" class="btn btn-primary" id="modalGithub" target="_blank"
+          rel="noreferrer"><i class="fab fa-github"></i>View on GitHub</a>
+        <button class="btn btn-outline" type="button" id="modalBack"><i class="fas fa-arrow-left"></i>Back</button>
+      </div>
+    </div>
+  </div>
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+  </body>
+  
+  </html>
+  
